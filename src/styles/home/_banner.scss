@@ -1,0 +1,78 @@
+// @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+.banner {
+    height: 100vh;
+    background-color: $main-color;
+    color: #fff;
+    position: relative;
+    display: flex;
+
+    .body {
+        margin: 10vh auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my-photo {
+        width: 200px;
+        width: 160px;
+        height: 200px;
+        margin: 0 auto;
+        //border: 1px solid #fff;
+        //border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .my-name {
+        text-align: center;
+       // font-family: 'Lobster', cursive;
+      //  font-size: 3rem;
+      //  font-weight: 200;
+        margin: 15px;
+    }
+    .my-field {
+        text-align: center;
+      //  font-family: 'Lobster', cursive;
+      //  font-size: 2rem;
+      //  font-weight: 200;
+        margin: 15px;
+        
+    }
+    .banner-wave1,
+    .banner-wave2,
+    .banner-wave3 {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        left: 0;
+       
+    }
+    .banner-wave2,
+    .banner-wave3 {
+        opacity: 0.1;
+    }
+    .banner-wave3 {
+        bottom: 30px;
+    }
+    .banner-wave2 {
+        bottom: 55px;
+    }
+    @media screen and (max-width: $tab-max-width) {
+        .banner-wave1,.banner-wave2,
+        .banner-wave3 {
+            bottom :0;
+        }
+    }
+}
+
+
+@media screen and (max-width: $mobile-max-width) {
+    .banner {
+        height: 80vh;
+        .my-photo {
+            width: 100px;
+            height:100px;
+        }
+    }
+}
+
+

@@ -1,12 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import Banner from './app/home/Banner';
+import Introduction from './app/home/Introduction';
+import ProfessionalSkills from './app/home/ProfessionalSkills';
+import Footer from './app/layout/Footer';
+import Header from './app/layout/Header';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
-    </div>
+    <React.Fragment>
+      <Header/>
+      <main className="App">
+        <Banner/>
+        <ProfessionalSkills/>
+        <Introduction/>
+      </main>
+      <Footer/>
+    </React.Fragment>
   );
 }
 
