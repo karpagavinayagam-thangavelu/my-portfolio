@@ -68,8 +68,8 @@ const professionalSkills = [
 ];
 export const ProfessionalSkills = () => {
   return (
-    <section className="professional-skills">
-        <Typography variant ="h4" align="center" className="h4">Professional Skills</Typography>
+    <section className="section professional-skills">
+        <Typography variant ="h4" align="center" className="section-header">Professional Skills</Typography>
       <Carousel
         indicators={false}
         animation="slide"

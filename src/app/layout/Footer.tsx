@@ -11,6 +11,7 @@ import MailIcon from "@material-ui/icons/Mail";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { darkTheme } from "../../styles/theme";
+import Quotes from "../../components/Quotes";
 
 const contacts = [
   {
@@ -39,13 +40,11 @@ export const Footer = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <footer>
-        <section className="quotes">
-          <Typography variant="h5">
-            “Wisdom is not a product of schooling but of the lifelong attempt to
-            acquire it.”
-          </Typography>
-            <div className="author"><Typography variant="h5"> ― Albert Einstein</Typography> </div>
-        </section>
+        <Quotes 
+          text="Wisdom is not a product of schooling but of the lifelong attempt to
+        acquire it." 
+          speaker= "Albert Einstein"
+        />
         <section className="contacts">
           {contacts.map((contact) => (
             <Fragment key={contact.label}>

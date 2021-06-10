@@ -5,15 +5,6 @@ footer {
     background-color: $main-color;
     color: #fff;
     fill:#fff;
-
-    .quotes {
-        margin: 30px auto ;
-        font-size: 1.4rem;
-        .author {
-            font-style: oblique;
-            text-align: right;
-        }
-    }
     .contacts {
         margin: 15px auto;
         display: flex;
@@ -23,5 +14,14 @@ footer {
         .contact {
             margin: 0 15px;
         }
+    }
+}
+
+.quotes {
+    margin: 30px auto ;
+    font-size: 1.4rem;
+    .author {
+        font-style: oblique;
+        text-align: right;
     }
 }

@@ -37,6 +37,11 @@ export const darkTheme = responsiveFontSizes(createMuiTheme({
                     color: darkPaletteTheme.palette.primary.contrastText
                 },
             }
+        },
+        MuiTypography: {
+            colorPrimary: {
+                color: "#fff"
+            }
         }
     }
 }));
