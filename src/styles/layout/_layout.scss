@@ -4,3 +4,26 @@
         margin-bottom: 30px;
     }
 }
+
+@mixin flex-layout {
+    display: flex;
+    flex-direction: column;
+    & > * {
+        margin: auto;
+    }
+}
+
+@mixin flex-row-layout {
+    @include flex-layout();
+    flex-direction: row;
+    @media screen and (max-width: $mobile-max-width) {
+        flex-direction: column;
+    }
+}
+
+@mixin align-center {
+    align-items: center;
+    align-self: auto;
+    text-align: center;
+    justify-content: center;
+}

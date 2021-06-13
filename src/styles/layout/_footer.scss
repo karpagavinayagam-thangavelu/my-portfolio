@@ -1,16 +1,15 @@
 footer {
-    display: flex;
-    flex-direction: column;
+    @include flex-layout;
     padding: 30px;
     background-color: $main-color;
     color: #fff;
     fill:#fff;
     .contacts {
         margin: 15px auto;
-        display: flex;
+        @include flex-row-layout;
+        @include align-center;
         flex-wrap: wrap;
-        align-content: center;
-        align-items: center;
+        
         .contact {
             margin: 0 15px;
         }

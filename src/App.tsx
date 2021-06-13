@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './app/home/Banner';
 import Education from './app/home/Education';
+import Experience from './app/home/Experience';
 import Introduction from './app/home/Introduction';
 import ProfessionalSkills from './app/home/ProfessionalSkills';
 import Footer from './app/layout/Footer';
@@ -15,6 +16,7 @@ const App = () => {
         <ProfessionalSkills/>
         <Introduction/>
         <Education/>
+        <Experience/>
       </main>
       <Footer/>
     </React.Fragment>

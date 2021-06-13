@@ -40,7 +40,8 @@ export const darkTheme = responsiveFontSizes(createMuiTheme({
         },
         MuiTypography: {
             colorPrimary: {
-                color: "#fff"
+                color: "#fff",
+                fill: "#fff"
             }
         }
     }

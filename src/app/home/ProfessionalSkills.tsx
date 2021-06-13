@@ -74,6 +74,7 @@ export const ProfessionalSkills = () => {
         indicators={false}
         animation="slide"
         navButtonsAlwaysVisible= {true}
+        autoPlay={false}
       >
         {professionalSkills.map((professionalSkill, index) => (
           <SkillCard key={index} skills={professionalSkill} />
@@ -95,7 +96,7 @@ export const SkillCard: React.FC<SkillCardProps> = ({ skills }) => {
             <Typography color="primary" variant="h6" gutterBottom className="skill-name">
               {skill.name}
             </Typography>
-            <img src={`/assets/images/${skill.icon}`} className={`skill-icon ${skill.style?? ''}`} alt=""/>
+            <img src={`/assets/images/${skill.icon}`} className="skill-icon" width="auto" height="100px" alt=""/>
             <Typography gutterBottom className="skill-details">{skill.details}</Typography>
           </CardContent>
         </Card>

@@ -1,11 +1,12 @@
 @import './variables';
 @import './layout/scrollbar';
+@import './layout/layout';
 @import './layout/header';
 @import './layout/footer';
-@import './layout/layout';
 
 
 @import './home/banner';
 @import './home/skills';
 @import './home/introduction';
 @import './home/education';
+@import './home/experience';

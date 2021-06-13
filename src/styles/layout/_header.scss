@@ -1,7 +1,7 @@
 header {
     .MuiTypography-h6 {
         @media screen and  (max-width: $mobile-max-width) {
-            text-align: center;
+            @include align-center;
         }
     }
 }

@@ -1,56 +1,53 @@
 .professional-skills {
-    
-    background-color: rgba(13,106,168,0.7);
+    background-color: rgba(13, 106, 168, 0.7);
     .section-header {
         padding: 15px;
-        color:#fff;
-    }
-}
-.cards {
-    display: flex;
-    margin: auto;
-   
-}
-.card {
-    width: 27vw;
-    
-    min-height: 200px;
-    margin: 15px;
-    text-align: center;
-    justify-content: center;
-    @media screen and (max-width: $tab-max-width) {
-        min-width: 200px;
-        flex-wrap: wrap;
-        align-items: center;
-        align-self: center;
+        color: #fff;
     }
 
-    .skill-name, .skill-details {
-        text-transform: capitalize;
+    .cards {
+        @include flex-layout;
+        
     }
 
-}
+    .skill-tab {
+        @include flex-row-layout;
+        @media screen and (max-width: $tab-max-width) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media screen and (max-width: $mobile-max-width) {
+            flex-direction: column;
+        }
+        .card {
+            width: 27vw;
+            min-height: 200px;
+            margin: 15px;
+            @include align-center;
+            align-self: auto ;
+            
+            @media screen and (max-width: $tab-max-width) {
+                min-width: 200px;
+                flex-wrap: wrap;
+                @include align-center;
+            }
+            @media screen and (max-width: $mobile-max-width) {
+                width: 90%;
+            }
 
-.skill-tab {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    @media screen and (max-width: $tab-max-width) {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-
+            .skill-name,
+            .skill-details {
+                text-transform: capitalize;
+            }
+        }
     }
-    @media screen and (max-width: $mobile-max-width) {
-        flex-direction: column;
-    }
-}
 
-.skill-icon {
-    height: 100px;
-    width: auto;
-}
-.content, .CarouselItem > div {
-    display: flex;
-    margin: auto;
+    .skill-icon {
+        height: 100px;
+        width: auto;
+    }
+    .content,
+    .CarouselItem > div {
+        @include flex-row-layout;
+    }
 }
