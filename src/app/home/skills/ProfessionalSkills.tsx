@@ -1,6 +1,8 @@
 import { Card, CardContent, Typography } from "@material-ui/core";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
+import { Element } from 'react-scroll';
+
 
 const professionalSkills = [
   [
@@ -14,7 +16,7 @@ const professionalSkills = [
     {
       name: "UX Design ",
       icon: "figma.svg",
-      style:'figma',
+      style: "figma",
       details:
         "Can Visually communicate the Product Ideas with User Experience research using Figma",
     },
@@ -68,19 +70,23 @@ const professionalSkills = [
 ];
 export const ProfessionalSkills = () => {
   return (
-    <section className="section professional-skills">
-        <Typography variant ="h4" align="center" className="section-header">Professional Skills</Typography>
+    <Element name="skills" className="section" id="skills">
+      <Typography variant="h4" align="center" className="section-header">
+        Professional Skills
+      </Typography>
       <Carousel
         indicators={false}
         animation="slide"
-        navButtonsAlwaysVisible= {true}
+        navButtonsAlwaysVisible={true}
         autoPlay={false}
       >
         {professionalSkills.map((professionalSkill, index) => (
-          <SkillCard key={index} skills={professionalSkill} />
+          <React.Fragment key={index}>
+            <SkillCard skills={professionalSkill} />
+          </React.Fragment>
         ))}
       </Carousel>
-    </section>
+    </Element>
   );
 };
 
@@ -89,15 +95,28 @@ interface SkillCardProps {
 }
 export const SkillCard: React.FC<SkillCardProps> = ({ skills }) => {
   return (
-    <div  className="skill-tab">
-      {skills.map((skill) => (
-        <Card variant="elevation" className="card">
+    <div className="skill-tab">
+      {skills.map((skill , index) => (
+        <Card variant="elevation" className="card" key={index}>
           <CardContent>
-            <Typography color="primary" variant="h6" gutterBottom className="skill-name">
+            <Typography
+              color="primary"
+              variant="h6"
+              gutterBottom
+              className="skill-name"
+            >
               {skill.name}
             </Typography>
-            <img src={`/assets/images/${skill.icon}`} className="skill-icon" width="auto" height="100px" alt=""/>
-            <Typography gutterBottom className="skill-details">{skill.details}</Typography>
+            <img
+              src={`/assets/images/${skill.icon}`}
+              className="skill-icon"
+              width="auto"
+              height="100px"
+              alt=""
+            />
+            <Typography gutterBottom className="skill-details">
+              {skill.details}
+            </Typography>
           </CardContent>
         </Card>
       ))}

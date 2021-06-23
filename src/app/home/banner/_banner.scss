@@ -75,3 +75,46 @@
 }
 
 
+
+
+.banner {
+    overflow: hidden;
+    overflow-x: hidden;
+    .wave {
+        opacity: 0.6;
+        position: absolute;
+        bottom:15%;
+        left:24%;
+        width: 6000px;
+        height: 5800px;
+        background: rgba(255,255,255,0.8);//rgba(13,106,168,0.9);
+        margin-left: -2700px;
+        transform-origin: 49% 49%;
+        margin-bottom: -6000px;
+        border-radius: 46%;
+        animation: wave 12s infinite linear;
+        pointer-events: none;
+    }
+    .wave2{
+        animation: wave 28s infinite linear alternate-reverse;
+        opacity: 0.3;
+    }
+    .wave3{
+        animation: wave 20s infinite linear alternate-reverse;
+        opacity: 1;
+    }
+    .wave4{
+       // background: rgba(0,255,255,0.2);
+        animation: wave 25s infinite linear reverse;
+        opacity: 0.8;
+    }
+}
+
+@keyframes wave {
+    from {
+        transform: rotate(0 deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

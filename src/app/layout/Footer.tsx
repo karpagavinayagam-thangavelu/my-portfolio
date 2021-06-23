@@ -1,36 +1,33 @@
 import React, { Fragment } from "react";
 import {
   ThemeProvider,
-  createMuiTheme,
   IconButton,
-  Button,
-  Typography,
 } from "@material-ui/core";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailIcon from "@material-ui/icons/Mail";
-import FacebookIcon from "@material-ui/icons/Facebook";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { darkTheme } from "../../styles/theme";
 import Quotes from "../../components/Quotes";
+import {CodeCampLogo} from "../../images/CodeCamp";
 
 const contacts = [
   {
-    link: "Linked In",
+    link: "https://www.linkedin.com/in/karpaga-vinayagam-thangavelu-66730220b",
     icon: LinkedInIcon,
     label: "Linked in",
   },
   {
-    link: "Gmail",
+    link: "karpagavinayagam.thangavelu@trimble.com",
     icon: MailIcon,
     label: "Mail",
   },
   {
-    link: "Facebook",
-    icon: FacebookIcon,
-    label: "Facebook",
+    link: "https://www.freecodecamp.org/karpagavinayagam",
+    icon: CodeCampLogo,
+    label: "Code Camp",
   },
   {
-    link: "Github",
+    link: "https://github.com/karpagavinayagam-thangavelu",
     icon: GitHubIcon,
     label: "Github",
   },

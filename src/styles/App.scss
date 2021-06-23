@@ -5,8 +5,9 @@
 @import './layout/footer';
 
 
-@import './home/banner';
-@import './home/skills';
-@import './home/introduction';
-@import './home/education';
-@import './home/experience';
+@import '../app/home/banner/banner';
+@import '../app/home/skills/skills';
+@import '../app/home/banner/introduction';
+@import '../app/home/education/education';
+@import '../app/home/experience/experience';
+@import '../app/home/recognitions/recognitions';

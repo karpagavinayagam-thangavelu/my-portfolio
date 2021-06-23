@@ -1,0 +1,176 @@
+#experience {
+    div {
+        @include flex-layout;
+    }
+    .paths {
+        @include flex-row-layout;
+        @include align-center;
+        flex-wrap: wrap;
+
+        .path {
+            cursor: pointer;
+            width: 33.33%;
+            @media screen and (max-width: $mobile-max-width) {
+                width: 100%;
+            }
+            height: 300px;
+            background-color: transparent;
+            perspective: 1000px;
+            min-width: 500px;
+            margin: 15px;
+
+            .flip-card {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+                box-shadow: 0px 2px 1px -1px rgb(55, 55, 55 / 20%), 0px 1px 1px 0px rgb(55, 55, 55 / 14%),
+                    0px 1px 3px 0px rgb(55, 55, 55 / 12%);
+                .front,
+                .back {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    -webkit-backface-visibility: hidden; /* Safari */
+                    backface-visibility: hidden;
+                }
+                .back {
+                    transform: rotateY(180deg);
+                }
+            }
+            &:hover .flip-card {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+    .tcs-card {
+        .brand {
+            margin-bottom: 15px;
+            .tag {
+                font-style: italic;
+                font-size: 0.9rem;
+                color: #255295;
+            }
+            .logo {
+            }
+        }
+        .card-body {
+            @include flex-row-layout;
+
+            flex-direction: row !important;
+            .left {
+                text-align: right;
+                padding-right: 10px;
+                min-width: 34%;
+                .name {
+                    color: #255295;
+                    font-weight: bold;
+                }
+                .position {
+                    font-style: italic;
+                }
+                & > * {
+                    margin-right: 0;
+                }
+            }
+            .right {
+                border-left: 1px solid #255295;
+                text-align: left;
+                padding-left: 10px;
+                & > * {
+                    margin-left: 0;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    .front, .back {
+        overflow: hidden;
+        @include flex-row-layout;
+    }
+    .trimble-card {
+        position: relative;
+        margin-top: 15px;
+        width: inherit;
+        height: inherit;
+        .text-holder {
+            height: inherit;
+        }
+        .brand {
+            color: #002d5b;
+            fill: #002d5b;
+            align-items: center;
+            position: relative;
+            margin-bottom: 15px;
+            z-index: 1;
+            .tag {
+                font-style: italic;
+            }
+        }
+        .body {
+            z-index: 1;
+
+            position: relative;
+        }
+        .base {
+            position: absolute;
+            background-color: #002d5b;
+            bottom: 0;
+            width: 100%;
+            height: 58%;
+        }
+        .wave {
+            width: 500px;
+            height: 500px;
+            background-color: #002d5b;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .wave-1 {
+            top: 80px;
+            left: -108px;
+        }
+        .wave-2 {
+            left: 198px;
+            bottom: 114px;
+            background-color: #fff;
+        }
+        .card-body {
+            color: #fff;
+            position: relative;
+            text-align: left;
+            width: inherit;
+            padding: 15px;
+            bottom: 15px;
+            height: 100%;
+            margin:0;
+            display: flex;
+            .content {
+                justify-content: flex-end;
+                width: inherit;
+                height: inherit;
+                bottom: 15px;
+                margin:0;
+                & > * {
+                    margin: 0;
+                }
+                .name {
+                    font-size: 1.2em;
+                    font-weight: 800;
+                }
+                .position {
+                    font-size: 1.1rem;
+                    font-style: italic;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #FFBE00;
+                    width: 70%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

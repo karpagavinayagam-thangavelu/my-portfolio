@@ -1,36 +1,41 @@
 import { ThemeProvider } from "@material-ui/core";
-import { Button, Card, Typography } from "@material-ui/core";
+import { Button, Typography } from "@material-ui/core";
 import React from "react";
-import { darkTheme } from "../../styles/theme";
+import { darkTheme } from "../../../styles/theme";
+import { Element } from 'react-scroll';
+import { LearningQuotes } from "../QuoteList";
 
 const learningPath = [
   {
     degree: "B.Tech.",
     institution: "Kalasalingam University",
+    location: "Srivilliputhur, Tamil Nadu, India",
     branch: "Computer science and Engineering",
-    detail: "Completed B.Tech, Computer science with 8.6 percentile",
+    score: "8.6 / 10",
     image: "klu.jpg",
     color: "1,50,32",
   },
 
   {
     degree: "M.E.",
-    institution: "Mepco Schlenk Engineering college",
+    institution: "Mepco Schlenk Engineering college ",
+    location: "Sivakasi, Tamil Nadu, India",
     branch: "Computer science and Engineering",
-    detail: "Completed M.Engg., Computer science with 9.4 percentile",
+    score: "9.4 / 10",
     image: "mepco.jpg",
     color: "20,28,58", // #141c3a
   },
 ];
 export const Education = () => {
   return (
-    <section className="section education">
+    <Element name="education"  className="section" id="education">
+      <LearningQuotes />
       <Typography variant="h4" align="center" className="section-header">
         Education
       </Typography>
       <div className="paths">
-        {learningPath.map((path) => (
-          <ThemeProvider theme={darkTheme}>
+        {learningPath.map((path , index) => (
+          <ThemeProvider theme={darkTheme} key={index}>
             <div
               className="path"
             >
@@ -53,7 +58,10 @@ export const Education = () => {
                 </div>
                 <div className="overlay">
                   <div className="body">
-                    <Typography color="primary">{path.detail}</Typography>
+                    <Typography variant="h4">{path.institution}</Typography>
+                    <Typography className="location">{path.location}</Typography>
+                    <Typography className="branch">{path.branch}</Typography>
+                    <Typography className="score">{path.score}</Typography>
                     <Button color="primary" variant="contained">
                       Know More
                     </Button>
@@ -64,7 +72,7 @@ export const Education = () => {
           </ThemeProvider>
         ))}
       </div>
-    </section>
+    </Element>
   );
 };
 

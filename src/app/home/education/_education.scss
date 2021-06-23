@@ -1,4 +1,4 @@
-.education {
+#education {
     div {
         @include flex-row-layout;
     }
@@ -50,20 +50,23 @@
             opacity: 0;
             background-color: #141c3a;
             border-radius: 12px;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.5s ease-in-out;
             .body {
                 @include flex-layout();
 
                 @include align-center();
                 > * {
-                    margin: 15px auto;
+                    margin: 0;
+                }
+                .location {
+                    font-style: italic;
+                }
+                .branch {
+                    padding:15px 0; 
                 }
             }
             &:hover {
-                opacity: 0.95;
-                & > * {
-                    opacity: 1;
-                }
+                opacity: 1;
             }
         }
     }

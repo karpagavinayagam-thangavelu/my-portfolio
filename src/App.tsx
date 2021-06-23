@@ -1,26 +1,19 @@
-import React from 'react';
-import Banner from './app/home/Banner';
-import Education from './app/home/Education';
-import Experience from './app/home/Experience';
-import Introduction from './app/home/Introduction';
-import ProfessionalSkills from './app/home/ProfessionalSkills';
-import Footer from './app/layout/Footer';
-import Header from './app/layout/Header';
+import React from "react";
+
+import Footer from "./app/layout/Footer";
+import Header from "./app/layout/Header";
+import Home from "./app/layout/Home";
+import { ThemeProvider } from '@material-ui/core';
+import { theme } from "./styles/theme";
 
 const App = () => {
   return (
-    <React.Fragment>
-      <Header/>
-      <main className="App">
-        <Banner/>
-        <ProfessionalSkills/>
-        <Introduction/>
-        <Education/>
-        <Experience/>
-      </main>
-      <Footer/>
-    </React.Fragment>
+    <ThemeProvider theme={theme}>
+      <Header />
+      <Home />
+      <Footer />
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
