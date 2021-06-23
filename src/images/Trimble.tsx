@@ -1,5 +1,5 @@
 import React, { memo, SVGProps } from "react";
-import { SvgIconProps, SvgIcon, makeStyles, createStyles } from "@material-ui/core";
+import { makeStyles, createStyles } from "@material-ui/core";
 
 
 const useStyles = makeStyles(({ spacing, palette, typography }) =>
@@ -55,4 +55,4 @@ export const TrimbleLogo:React.FC<SVGProps<any>> = (props) => {
     );
 }
 
-export default TrimbleLogo;
+export default memo(TrimbleLogo);

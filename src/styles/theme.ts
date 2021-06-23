@@ -34,7 +34,8 @@ export const darkTheme = responsiveFontSizes(createMuiTheme({
                 border: "1px solid #FFF",
                 "&:hover": {
                     backgroundColor : darkPaletteTheme.palette.primary.main,
-                    color: darkPaletteTheme.palette.primary.contrastText
+                    color: darkPaletteTheme.palette.primary.contrastText,
+                    fill: darkPaletteTheme.palette.primary.contrastText
                 },
             }
         },
