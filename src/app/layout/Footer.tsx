@@ -17,7 +17,7 @@ const contacts = [
     label: "Linked in",
   },
   {
-    link: "karpagavinayagam.thangavelu@trimble.com",
+    link: "mailto:karpagavinayagam.thangavelu@trimble.com",
     icon: MailIcon,
     label: "Mail",
   },
