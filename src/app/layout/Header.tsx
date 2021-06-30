@@ -13,37 +13,38 @@ export const Header = (props: any) => {
       name: "Skills",
       elementName: "skills"
     },
-     {
+    {
       name: "Education",
       elementName: "education"
-     },
-     {
+    },
+    {
       name: "Experience",
       elementName: "experience"
-     },
-     {
-       name: "Recognition",
-       elementName: "recognition"
-     }
+    },
+    {
+      name: "Recognition",
+      elementName: "recognition"
+    }
   ]
   return (
     <AppBar position="sticky">
       <Toolbar>
-        <IconButton edge="start" color="inherit" aria-label="menu">
+        <IconButton edge="start" color="inherit" aria-label="menu" className="mobile-menu">
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" style={{ flexGrow: 1 }}>
           My Portfolio
         </Typography>
+        <div className="desktop-link">
           {links.map(
-            (link, index) => (  
+            (link, index) => (
 
-            <Link className="link" activeClass="active" key={index} to={link.elementName}  
+              <Link className="link" activeClass="active" key={index} to={link.elementName}
                 spy={true} smooth={true} duration={250}  >
-              {link.name}
-            </Link>
-          
-          ))}
+                {link.name}
+              </Link>
+            ))}
+        </div>
       </Toolbar>
     </AppBar>
   );

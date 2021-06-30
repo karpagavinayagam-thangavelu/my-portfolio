@@ -7,7 +7,7 @@ import { darkTheme } from "../../../styles/theme";
 export const Banner = () => {
   return (
     <ThemeProvider theme={darkTheme}>
-      <section className="banner">
+      <section className="banner" >
         <div className="body">
           <img src="/assets/images/developer-icon.png" alt="" className="my-photo" />
           <Typography variant="h2" className="my-name">Karpaga vinayagam Thangavelu</Typography>

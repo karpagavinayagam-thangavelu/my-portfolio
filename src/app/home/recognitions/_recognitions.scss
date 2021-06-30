@@ -13,8 +13,6 @@
       width: 400px;
       margin: 0;
       background-color: aqua;
-
-     
     }
   }
 
@@ -33,13 +31,34 @@
   }
 
   @media screen and (max-width: 640px) {
-  .card-carousel {
+    .card-carousel {
       right: 19%;
       .card {
         left: 38% !important;
       }
+    }
   }
-}
+
+  @media screen and (max-width: $mobile-max-width) {
+    .rewards {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .card-carousel {
+      right: 0%;
+      --card-width: 80%;
+      --card-max-width: 80%;
+      --card-height: 350px;
+      --carousel-min-width: auto;
+      height: var(--card-height);
+      min-width: var(--carousel-min-width);
+      width: 80%;
+      .card {
+        left: 0% !important;
+      }
+    }
+  }
 
   .card-carousel.smooth-return {
     transition: all 0.2s ease;
@@ -64,7 +83,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  //  animation: carousel-rotate 5s infinite;
+    animation: carousel-rotate 15s infinite;
   }
 
   .card-carousel:hover {
@@ -89,15 +108,14 @@
         left: nth($leftSides, $index);
         z-index: nth($zIndex, $index);
         opacity: 1;
+        
       }
     }
   }
 
-  $bgColor:linear-gradient(222deg, #02c6c9, #014d4e),
-  linear-gradient(222deg, #ffbe00, #9ec75c),
-  linear-gradient(180deg, #dccff1, #966fd6 ),
-  linear-gradient(222deg, #005F9E, #009AD9),
-  linear-gradient(222deg, #D0D0D7, #6A6976 );
+  $bgColor: linear-gradient(222deg, #02c6c9, #014d4e), linear-gradient(222deg, #ffbe00, #9ec75c),
+    linear-gradient(180deg, #dccff1, #966fd6), linear-gradient(222deg, #005f9e, #009ad9),
+    linear-gradient(222deg, #d0d0d7, #6a6976);
 
   $color: #fff;
 
@@ -107,16 +125,21 @@
     $refIndex: ($refIndex % 5) + 1;
     $refIndex: ($refIndex % 5) + 1;
     .card-carousel .card:nth-of-type(#{$index }) {
-      animation-delay: ($index - 1) * 2s;
+      animation-delay: ($index - 5) * 3s;
       left: nth($leftSides, $refIndex);
       transform: scale(nth($scale, $refIndex));
       z-index: nth($zIndex, $refIndex);
       background: nth($bgColor, $refIndex);
       color: #fff;
       font-weight: bold;
-      opacity: 1;
+      @media screen and (max-width: $mobile-max-width) {
+        opacity: 1;
+      }
+      @media screen and (min-width: $mobile-max-width) {
+        opacity: 0;
+      }
       .image-container {
-        box-shadow: inset 0px 0px 17px 2px rgb(135 ,164, 20);
+        box-shadow: inset 0px 0px 17px 2px rgb(135, 164, 20);
       }
     }
   }
@@ -130,7 +153,7 @@
     border-radius: 100%;
     padding: 1em;
     box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
-    &>* {
+    & > * {
       width: 100%;
     }
   }
@@ -163,37 +186,36 @@
   }
 }
 
-
 .filler {
-  width:100%;
+  width: 100%;
   height: 100%;
   svg {
     width: 100%;
     height: 50%;
-    fill : #255295;
+    fill: #255295;
   }
   .title {
     font-size: 24px;
     font-weight: 600;
     font-style: italic;
     box-shadow: inset;
-    text-shadow: 3px 4px 6px #FFBE00;
+    text-shadow: 3px 4px 6px #ffbe00;
   }
 }
 
 .bravo {
   svg {
-  height: 50%;
-  height: 23%;
-  margin-left: 3px;
-  fill : #002D5B;
+    height: 50%;
+    height: 23%;
+    margin-left: 3px;
+    fill: #002d5b;
   }
 }
 
 .award {
   img {
     height: 55%;
-    width:auto;
+    width: auto;
   }
   .title {
     white-space: nowrap;

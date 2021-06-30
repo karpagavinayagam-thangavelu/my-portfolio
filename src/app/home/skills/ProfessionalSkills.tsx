@@ -78,7 +78,7 @@ export const ProfessionalSkills = () => {
         indicators={false}
         animation="slide"
         navButtonsAlwaysVisible={true}
-        autoPlay={false}
+        autoPlay={true}
       >
         {professionalSkills.map((professionalSkill, index) => (
           <React.Fragment key={index}>

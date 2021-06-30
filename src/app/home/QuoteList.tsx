@@ -42,3 +42,16 @@ export const RecognitionQuotes = () => {
     </section>
   );
 };
+
+export const CertificationQuotes = () => {
+  return (
+    <section className="parallax" style={{ backgroundImage: `url(/assets/images/certificate-bg.jpg)` }}>
+      <div className="experience-quotes">
+        <Quotes
+          text="Your certificate and skills are vital to the extent of jump-starting your career and giving a chance to compete in a global space."
+          speaker="Bernard Kelvin Clive"
+        />
+      </div>
+    </section>
+  );
+};

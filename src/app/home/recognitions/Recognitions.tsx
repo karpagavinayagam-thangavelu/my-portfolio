@@ -42,12 +42,7 @@ const RankHolder = () => (
 
 
 const rewardList = [
-  {
-    name: "Bravo",
-    institution: "Trimble",
-    description: " For continuous Knowledge sharing sessions with real time situations and Mathematical concepts.",
-    icon: Bravo
-  },
+  
   {
     name: "Rank Holder",
     institution: "Mepco Schlenk Engg College",
@@ -71,7 +66,13 @@ const rewardList = [
     institution: "Trimble",
     description: "Extensive support in hard situations for multiple squads",
     icon: ShoutOut
-  }
+  },
+  {
+    name: "Bravo",
+    institution: "Trimble",
+    description: " For continuous Knowledge sharing sessions with real time situations and Mathematical concepts.",
+    icon: Bravo
+  },
 ];
 
 export const Recognitions = () => {

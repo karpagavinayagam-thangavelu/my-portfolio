@@ -1,13 +1,18 @@
-// @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 .banner {
-    height: 100vh;
-    background-color: $main-color;
+    height: calc(100vh - 44px);
+    //background-color: $main-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(164deg, #0d6aa8f0, #255295d4);
+    background-image: radial-gradient(#2a98e1c4, #0d6aa8f0);
+
     color: #fff;
     position: relative;
     @include flex-layout;
 
     .body {
-        margin: 10vh auto;
+        margin: auto;
         @include flex-layout;
     }
 
@@ -23,18 +28,23 @@
 
     .my-name {
         @include align-center;
-       // font-family: 'Lobster', cursive;
-      //  font-size: 3rem;
-      //  font-weight: 200;
+        font-family: 'Lobster', cursive;
+        font-size: 3rem;
+        font-weight: 200;
         margin: 15px;
+        @media screen and (max-width: $tab-max-width) {
+            font-size: 2rem;
+        }
     }
     .my-field {
         @include align-center;
-      //  font-family: 'Lobster', cursive;
-      //  font-size: 2rem;
-      //  font-weight: 200;
+        font-family: 'Lobster', cursive;
+        font-size: 2rem;
+        font-weight: 200;
         margin: 15px;
-        
+        @media screen and (max-width: $tab-max-width) {
+            font-size: 1.5rem;
+        }
     }
     .banner-wave1,
     .banner-wave2,
