@@ -11,7 +11,7 @@ const App = React.lazy(() => import('./App'));
 const init = () => (
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div></div>}>
       <App/>
       </Suspense>
     </ThemeProvider>
