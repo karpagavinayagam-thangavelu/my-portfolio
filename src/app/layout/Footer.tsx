@@ -49,6 +49,7 @@ export const Footer = () => {
                 aria-label={contact.label}
                 color="primary"
                 href={contact.link}
+                rel="noopener noreferrer"
                 target="_blank"
                 className="contact"
               >

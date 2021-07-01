@@ -72,6 +72,7 @@
                 }
                 .position {
                     font-style: italic;
+                    color: #255295;
                 }
                 & > * {
                     margin-right: 0;
@@ -80,6 +81,7 @@
             .right {
                 border-left: 1px solid #255295;
                 text-align: left;
+                color: #255295;
                 padding-left: 10px;
                 & > * {
                     margin-left: 0;

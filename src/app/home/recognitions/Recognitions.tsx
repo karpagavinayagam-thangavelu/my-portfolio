@@ -35,7 +35,7 @@ const CoE = () => (
 
 const RankHolder = () => (
   <div className="filler award">
-    <img src="/assets/images/reward.webp" alt=""/>
+    <img src="/assets/images/reward.webp" alt="" height="70px" width="70px"/>
     <span className="title">Rank Holder</span>
   </div>
 );

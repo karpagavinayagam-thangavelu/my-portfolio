@@ -102,6 +102,7 @@ export const SkillCard: React.FC<SkillCardProps> = ({ skills }) => {
             <Typography
               color="primary"
               variant="h6"
+              variantMapping={{"h6": "h3"}}
               gutterBottom
               className="skill-name"
             >
@@ -110,9 +111,9 @@ export const SkillCard: React.FC<SkillCardProps> = ({ skills }) => {
             <img
               src={`/assets/images/${skill.icon}`}
               className="skill-icon"
-              width="auto"
+              width="100px"
               height="100px"
-              alt=""
+              alt="skill-set"
             />
             <Typography gutterBottom className="skill-details">
               {skill.details}

@@ -5,9 +5,8 @@ import { Link } from 'react-scroll'
 
 
 export const Header = (props: any) => {
-  const { match, location, history } = props;
+  // const { match, location, history } = props;
 
-  console.log(match, location, history);
   const links = [
     {
       name: "Skills",
@@ -32,7 +31,7 @@ export const Header = (props: any) => {
         <IconButton edge="start" color="inherit" aria-label="menu" className="mobile-menu">
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" style={{ flexGrow: 1 }}>
+        <Typography variant="h6" variantMapping={{"h6": "h1"}} style={{ flexGrow: 1 }}>
           My Portfolio
         </Typography>
         <div className="desktop-link">
