@@ -27,7 +27,7 @@ const CertificationList = [
     },
 
     {
-        icon: "redux.png",
+        icon: "redux.svg",
         title: "Front end Libraries (Bootstrap, React, Redux)",
         detail: "Free code camp Certified",
         alt: "Libraries"
