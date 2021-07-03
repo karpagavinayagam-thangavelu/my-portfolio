@@ -70,7 +70,7 @@ const professionalSkills = [
 ];
 export const ProfessionalSkills = () => {
   return (
-    <Element name="skills" className="section" id="skills">
+    <Element name="skills" className="section" id="skills" data-aos="zoom-out" >
       <Typography variant="h4" align="center" className="section-header">
         Professional Skills
       </Typography>
@@ -95,9 +95,9 @@ interface SkillCardProps {
 }
 export const SkillCard: React.FC<SkillCardProps> = ({ skills }) => {
   return (
-    <div className="skill-tab">
+    <div className="skill-tab"  >
       {skills.map((skill , index) => (
-        <Card variant="elevation" className="card" key={index}>
+        <Card variant="elevation" className="card" key={index} >
           <CardContent>
             <Typography
               color="primary"

@@ -30,7 +30,7 @@ export const Header = (props: any) => {
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="menu" className="mobile-menu">
           <MenuIcon />
-        </IconButton>
+        </IconButton> 
         <Typography variant="h6" variantMapping={{"h6": "h1"}} style={{ flexGrow: 1 }}>
           My Portfolio
         </Typography>

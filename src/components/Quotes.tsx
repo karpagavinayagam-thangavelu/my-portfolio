@@ -6,7 +6,7 @@ interface QuoteProps {
 }
 export const Quotes: React.FC<QuoteProps> = ({ text, speaker }) => {
   return (
-    <section className="quotes">
+    <section className="quotes" data-aos="fade-right">
       <Typography variant="h5" variantMapping={{"h5": "h3"}}>“{text}”</Typography>
       {speaker && (
         <div className="author">

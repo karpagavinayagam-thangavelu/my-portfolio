@@ -2,7 +2,6 @@
 import { Element } from 'react-scroll';
 import React from "react";
 import { Typography, List, ListItem, ListItemText, ListItemAvatar, Avatar } from "@material-ui/core";
-import ImageIcon from '@material-ui/icons/Image';
 import { CertificationQuotes } from '../QuoteList';
 
 const CertificationList = [
@@ -45,7 +44,7 @@ export const Certifications = () => {
                 <List>
                     {CertificationList.map(
                         (certificate, index) => (
-                            <ListItem key={index}>
+                            <ListItem key={index} data-aos="fade-down">
                                 <ListItemAvatar>
                                     <Avatar className="avatar">
                                         <img src={`/assets/images/${certificate.icon}`} alt="" width="110px" height="110px" />
