@@ -1,9 +1,9 @@
 import { ThemeProvider, Typography } from "@material-ui/core";
-import React from "react";
 import { darkTheme } from "../../../styles/theme";
 import { Element } from 'react-scroll';
 import { LearningQuotes } from "../QuoteList";
 import { EducationDetails } from "./EducationDetails";
+import { env } from "../../env";
 
 const learningPath = [
   {
@@ -35,7 +35,7 @@ export const Education = () => {
         {learningPath.map((path , index) => (
           <ThemeProvider theme={darkTheme} key={index}>
             <div className="path"   >
-              <div className="bg-image"  style={{ backgroundImage: `url(/assets/images/${path.image})` }}>
+              <div className="bg-image"  style={{ backgroundImage: `url(${env.imagePath}/${path.image})` }}>
                 <div  className="body" style={{ backgroundColor: `rgba(${path.color},0.8)` }}>
                   <div className="center">
                     <div>

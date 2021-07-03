@@ -2,6 +2,7 @@ import { Card, CardContent, Typography } from "@material-ui/core";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Element } from 'react-scroll';
+import { env } from "../../env";
 
 
 const professionalSkills = [
@@ -109,7 +110,7 @@ export const SkillCard: React.FC<SkillCardProps> = ({ skills }) => {
               {skill.name}
             </Typography>
             <img
-              src={`/assets/images/${skill.icon}`}
+              src={`${env.imagePath}/${skill.icon}`}
               className="skill-icon"
               width="100px"
               height="100px"

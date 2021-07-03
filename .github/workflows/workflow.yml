@@ -1,0 +1,19 @@
+name: Build and Deploy
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 
+        uses: actions/checkout
+
+      - name: Install and Build 
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy 
+        uses: karpagavinayagam-thangavelu/my-portfolio/
+        with:
+          branch: gh-pages 
+          folder: build 

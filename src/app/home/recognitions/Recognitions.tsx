@@ -4,6 +4,7 @@ import { Element } from 'react-scroll';
 import { TataLogo } from "../../../images/tata";
 import React from "react";
 import { TrimbleLogo } from "../../../images/Trimble";
+import { env } from "../../env";
 
 const ILPAward = () => (
   <div className="filler">
@@ -35,7 +36,7 @@ const CoE = () => (
 
 const RankHolder = () => (
   <div className="filler award">
-    <img src="/assets/images/reward.webp" alt="" height="70px" width="70px"/>
+    <img src={`${env.imagePath}/reward.webp`} alt="" height="70px" width="70px"/>
     <span className="title">Rank Holder</span>
   </div>
 );
