@@ -1,5 +1,6 @@
 {
   "name": "my-portfolio",
+  "homepage": "https://github.com/karpagavinayagam-thangavelu/me/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -87,7 +88,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
