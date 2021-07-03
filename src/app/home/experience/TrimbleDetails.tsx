@@ -21,7 +21,7 @@ export const TrimbleDetails = () => (
         <DialogTitle id="Trimble"><Typography variant="h3">Trimble Inc. </Typography></DialogTitle>
         <DialogContent>
             <DialogContentText >
-                Worked in Full stack development for 4 years .
+                Working in Frotn end development for 4 years .
                 <VerticalLinearStepper 
                     getSteps={myPath} 
                     getStepContent={myStepDetails} 
