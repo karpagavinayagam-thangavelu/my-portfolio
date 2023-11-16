@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.753a5691.css",
-    "main.js": "/my-portfolio/static/js/main.b36fc2ff.js",
-    "static/js/787.2dcca737.chunk.js": "/my-portfolio/static/js/787.2dcca737.chunk.js",
-    "index.html": "/my-portfolio/index.html",
-    "main.753a5691.css.map": "/my-portfolio/static/css/main.753a5691.css.map",
-    "main.b36fc2ff.js.map": "/my-portfolio/static/js/main.b36fc2ff.js.map",
-    "787.2dcca737.chunk.js.map": "/my-portfolio/static/js/787.2dcca737.chunk.js.map"
+    "main.css": "https://karpagavinayagam-thangavelu.github.io/my-portfolio/static/css/main.753a5691.css",
+    "main.js": "https://karpagavinayagam-thangavelu.github.io/my-portfolio/static/js/main.a836ce88.js",
+    "static/js/787.2dcca737.chunk.js": "https://karpagavinayagam-thangavelu.github.io/my-portfolio/static/js/787.2dcca737.chunk.js",
+    "index.html": "https://karpagavinayagam-thangavelu.github.io/my-portfolio/index.html",
+    "main.753a5691.css.map": "https://karpagavinayagam-thangavelu.github.io/my-portfolio/static/css/main.753a5691.css.map",
+    "main.a836ce88.js.map": "https://karpagavinayagam-thangavelu.github.io/my-portfolio/static/js/main.a836ce88.js.map",
+    "787.2dcca737.chunk.js.map": "https://karpagavinayagam-thangavelu.github.io/my-portfolio/static/js/787.2dcca737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.753a5691.css",
-    "static/js/main.b36fc2ff.js"
+    "static/js/main.a836ce88.js"
   ]
 }
