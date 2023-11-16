@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography } from "@material-ui/core";
+import { Card, CardContent, Typography } from "@mui/material";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Element } from 'react-scroll';
@@ -72,7 +72,7 @@ const professionalSkills = [
 export const ProfessionalSkills = () => {
   return (
     <Element name="skills" className="section" id="skills" data-aos="zoom-out" >
-      <Typography variant="h4" align="center" className="section-header">
+      <Typography variant="h4" component="h3" align="center" className="section-header">
         Professional Skills
       </Typography>
       <Carousel

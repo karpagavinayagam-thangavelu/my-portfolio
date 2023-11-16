@@ -1,8 +1,8 @@
 import React, { memo } from "react";
-import { makeStyles, createStyles } from "@material-ui/core";
+import { makeStyles } from "@mui/styles";
 
-const useStyles = makeStyles(({ spacing, palette, typography }) =>
-  createStyles({
+const useStyles = makeStyles(() =>
+  ({
     CodeCampLogo: {
       fill: "inherit",
       width: '20px',

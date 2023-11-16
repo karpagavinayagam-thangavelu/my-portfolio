@@ -1,6 +1,6 @@
-import { AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
 import React from 'react';
-import MenuIcon from '@material-ui/icons/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-scroll'
 
 
@@ -38,7 +38,7 @@ export const Header = (props: any) => {
           {links.map(
             (link, index) => (
 
-              <Link className="link" activeClass="active" key={index} to={link.elementName}
+              <Link href={`/#${link.elementName}`} className="link" activeClass="active" key={index} to={link.elementName}
                 spy={true} smooth={true} duration={250}  >
                 {link.name}
               </Link>

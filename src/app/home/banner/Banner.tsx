@@ -1,5 +1,5 @@
-import { Link, Typography } from "@material-ui/core";
-import { ThemeProvider } from "@material-ui/styles";
+import { Link, Typography } from "@mui/material";
+import { ThemeProvider } from '@mui/material/styles';
 import { BannerWave1, BannerWave2, BannerWave3 } from "../../../images/Banner";
 import { darkTheme } from "../../../styles/theme";
 import { env } from "../../env";
@@ -10,8 +10,8 @@ export const Banner = () => {
       <section className="banner" >
         <div className="body">
           <img src={`${env.imagePath}/developer-icon.png`} alt="" className="my-photo" />
-          <Typography variant="h2" className="my-name">Karpaga vinayagam Thangavelu</Typography>
-          <Typography variant="h3" className="my-field">Front end Developer</Typography>
+          <Typography variant="h2" component={"h1"} className="my-name">Karpaga vinayagam Thangavelu</Typography>
+          <Typography variant="h3" component={"h2"} className="my-field">Front end Developer</Typography>
         </div>
         <BannerWave1 />
         <BannerWave2 />
@@ -28,8 +28,8 @@ export const Banner1 = () => {
       <section className="banner">
         <header className="body">
           <img src={`${env.imagePath}/developer-icon.png`} alt="" className="my-photo" />
-          <Typography variant="h2" className="my-name">Karpaga vinayagam Thangavelu</Typography>
-          <Typography variant="h3" className="my-field">Front end Developer</Typography>
+          <Typography variant="h2" component={"h1"}  className="my-name">Karpaga vinayagam Thangavelu</Typography>
+          <Typography variant="h3" component={"h2"} className="my-field">Front end Developer</Typography>
         </header>
         <footer>
           <Link href="" >View My details</Link>

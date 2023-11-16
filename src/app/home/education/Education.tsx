@@ -1,4 +1,4 @@
-import { ThemeProvider, Typography } from "@material-ui/core";
+import { ThemeProvider, Typography } from "@mui/material";
 import { darkTheme } from "../../../styles/theme";
 import { Element } from 'react-scroll';
 import { LearningQuotes } from "../QuoteList";
@@ -28,7 +28,7 @@ export const Education = () => {
   return (
     <Element name="education"  className="section" id="education">
       <LearningQuotes />
-      <Typography variant="h4" align="center" className="section-header">
+      <Typography variant="h4"component="h3" align="center" className="section-header">
         Education
       </Typography>
       <div className="paths" data-aos="zoom-in-down">
@@ -48,7 +48,7 @@ export const Education = () => {
                 </div>
                 <div className="overlay">
                   <div className="body">
-                    <Typography variant="h4">{path.institution}</Typography>
+                    <Typography variant="h4" component="h3">{path.institution}</Typography>
                     <Typography className="location">{path.location}</Typography>
                     <Typography className="branch">{path.branch}</Typography>
                     <EducationDetails step={path.degree} />

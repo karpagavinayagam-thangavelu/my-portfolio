@@ -1,4 +1,4 @@
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from "@material-ui/core";
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from "@mui/material";
 import React from "react";
 
 interface ColTableProps {
@@ -42,7 +42,7 @@ export const RowTable: React.FC<RowTableProps> = ({ headers, rowEntries }) => (
             <TableBody>
                 {
                     rowEntries.map((row: string | JSX.Element, index: number) => (
-                        <TableRow>
+                        <TableRow key={index}>
                             <TableCell component="th" scope="row"><b>{headers[index]}</b> </TableCell>
                             <TableCell >{row}</TableCell>
                         </TableRow>

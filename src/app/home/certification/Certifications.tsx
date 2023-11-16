@@ -1,6 +1,6 @@
 
 import { Element } from 'react-scroll';
-import { Typography, List, ListItem, ListItemText, ListItemAvatar, Avatar } from "@material-ui/core";
+import { Typography, List, ListItem, ListItemText, ListItemAvatar, Avatar } from "@mui/material";
 import { CertificationQuotes } from '../QuoteList';
 import { env } from '../../env';
 
@@ -37,7 +37,7 @@ export const Certifications = () => {
     return (
         <Element name="certifications" className="section" id="certifications">
             <CertificationQuotes />
-            <Typography variant="h4" align="center" className="section-header">
+            <Typography variant="h4" component="h3" align="center" className="section-header">
                 Certifications
             </Typography>
             <div className="certifications">

@@ -2,10 +2,10 @@ import React, { Fragment } from "react";
 import {
   ThemeProvider,
   IconButton,
-} from "@material-ui/core";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import MailIcon from "@material-ui/icons/Mail";
-import GitHubIcon from "@material-ui/icons/GitHub";
+} from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailIcon from "@mui/icons-material/Mail";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { darkTheme } from "../../styles/theme";
 import Quotes from "../../components/Quotes";
 import {CodeCampLogo} from "../../images/CodeCamp";

@@ -1,4 +1,4 @@
-import { Paper, Slide } from "@material-ui/core";
+import { Paper, Slide } from "@mui/material";
 import React, { PropsWithChildren } from "react";
 // import { CarouselProps } from "react-material-ui-carousel";
 

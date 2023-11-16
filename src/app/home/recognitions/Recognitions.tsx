@@ -1,4 +1,4 @@
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 import { RecognitionQuotes } from "../QuoteList";
 import { Element } from 'react-scroll';
 import { TataLogo } from "../../../images/tata";
@@ -80,7 +80,7 @@ export const Recognitions = () => {
   return (
     <Element name="recognition" className="section" id="recognition">
       <RecognitionQuotes />
-      <Typography variant="h4" align="center" className="section-header">
+      <Typography variant="h4" component="h3" align="center" className="section-header">
         Recognitions
 
       </Typography>

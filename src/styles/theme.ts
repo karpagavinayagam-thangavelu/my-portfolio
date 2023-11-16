@@ -1,9 +1,9 @@
 
-import { createMuiTheme, responsiveFontSizes } from "@material-ui/core";
+import { responsiveFontSizes, createTheme } from "@mui/material";
 
-const paletteTheme = createMuiTheme({
+const paletteTheme = createTheme({
     palette: {
-        type: 'light',
+        mode: 'light',
         primary: {
             main: "#0D6AA8"
         },
@@ -14,9 +14,9 @@ const paletteTheme = createMuiTheme({
 });
 
 
-export const darkPaletteTheme = responsiveFontSizes(createMuiTheme({
+export const darkPaletteTheme = responsiveFontSizes(createTheme({
     palette: {
-        type: 'dark',
+        mode: 'dark',
         primary: {
             main: "#FFF",
             contrastText: "#0D6AA8",
@@ -26,34 +26,42 @@ export const darkPaletteTheme = responsiveFontSizes(createMuiTheme({
         },  
     },
 }));
-export const darkTheme = responsiveFontSizes(createMuiTheme({
+export const darkTheme = responsiveFontSizes(createTheme({
    ...darkPaletteTheme,
-    overrides: {
+   components: {
         MuiIconButton: {
-            colorPrimary: {
-                border: "1px solid #FFF",
-                "&:hover": {
-                    backgroundColor : darkPaletteTheme.palette.primary.main,
-                    color: darkPaletteTheme.palette.primary.contrastText,
-                    fill: darkPaletteTheme.palette.primary.contrastText
-                },
+            styleOverrides: {
+                colorPrimary : {
+                    border: "1px solid #FFF",
+                    "&:hover": {
+                        backgroundColor : darkPaletteTheme.palette.primary.main,
+                        color: darkPaletteTheme.palette.primary.contrastText,
+                        fill: darkPaletteTheme.palette.primary.contrastText
+                    },
+                }
             }
         },
         MuiTypography: {
-            colorPrimary: {
-                color: "#fff",
-                fill: "#fff"
+            styleOverrides: {
+                /*
+                colorPrimary: {
+                    color: "#fff",
+                    fill: "#fff"
+                }*/
             }
         }
     }
 }));
 
-export const theme = responsiveFontSizes(createMuiTheme({
+export const theme = responsiveFontSizes(createTheme({
     ...paletteTheme,
-    overrides: {
+    components: {
         MuiIconButton: {
-            root: {
-                border: "1px solid #0D6AA8"
+            styleOverrides: {
+                root: {
+                    
+                    border: "1px solid #0D6AA8"
+                }
             }
         }
     }

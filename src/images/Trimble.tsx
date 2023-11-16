@@ -1,9 +1,8 @@
 import React, { memo, SVGProps } from "react";
-import { makeStyles, createStyles } from "@material-ui/core";
+ import { makeStyles  } from '@mui/styles';
 
-
-const useStyles = makeStyles(({ spacing, palette, typography }) =>
-    createStyles({
+const useStyles = makeStyles(() => 
+   ({
         TrimbleLogo : {
             fill: 'inherit',
             width: '125px',

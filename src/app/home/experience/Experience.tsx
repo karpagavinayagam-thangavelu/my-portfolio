@@ -1,4 +1,4 @@
-import { Dialog, Typography, ThemeProvider } from "@material-ui/core";
+import { Dialog, Typography, ThemeProvider } from "@mui/material";
 import { TataLogo } from "../../../images/tata";
 import { darkTheme } from "../../../styles/theme";
 import React, { useState } from "react";
@@ -84,7 +84,7 @@ const handleClose = () => {
   return (
     <Element name="experience" className="section" id="experience">
       <ExperienceQuotes />
-      <Typography variant="h4" align="center" className="section-header">
+      <Typography variant="h4" component="h3" align="center" className="section-header">
         Experience
       </Typography>
       <div className="paths" data-aos="zoom-in-up">
