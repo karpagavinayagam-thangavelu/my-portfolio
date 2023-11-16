@@ -8,7 +8,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { ThemeProvider } from '@mui/material/styles';
 
-const App = () => {
+export const App = () => {
   useEffect(
     () => {
       Aos.init({duration:1000});

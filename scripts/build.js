@@ -45,7 +45,7 @@ if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
 
 const argv = process.argv.slice(2);
 const writeStatsJson = argv.indexOf('--stats') !== -1;
-App
+
 // Generate configuration
 const config = configFactory('production');
 
