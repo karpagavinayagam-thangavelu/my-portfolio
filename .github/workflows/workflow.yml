@@ -13,7 +13,7 @@ jobs:
           npm run build
 
       - name: Deploy 
-        uses: karpagavinayagam-thangavelu/my-portfolio/
+        uses: karpagavinayagam-thangavelu/my-portfolio@master
         with:
           branch: gh-pages 
           folder: build 
