@@ -1,19 +1,29 @@
-name: Build and Deploy
-on: [push]
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.18.0]
     steps:
-      - name: Checkout 
-        uses: actions/checkout
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Install and Build 
-        run: |
-          npm install
-          npm run build
-
-      - name: Deploy 
-        uses: karpagavinayagam-thangavelu/my-portfolio@master
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          branch: gh-pages 
-          folder: build 
+          node-version: ${{ matrix.node-version }}
+  
+      - name: Install dependencies
+        run: npm install
+      - name: Install and Build 
+        run:  npm run build
+      - name: deploy
+        run:  npm run deploy
+     
