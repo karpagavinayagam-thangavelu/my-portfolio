@@ -1,5 +1,5 @@
 
 export const env = {
-    imagePath : "/assets/images",
-    PUBLIC_URL: "/"
+    imagePath : "/my-portfolio/assets/images",
+    PUBLIC_URL: "/my-portfolio"
 }
