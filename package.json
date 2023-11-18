@@ -73,10 +73,10 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "start": "cp ./src/env/env.local.ts ./src/app/env.ts && node scripts/start.js",
+    "build": "PUBLIC_URL=https://karpagavinayagam-thangavelu.github.io/my-portfolio  node scripts/build.js",
     "test": "node scripts/test.js",
-    "predeploy": "npm run build",
+    "predeploy": "cp ./src/env/env.prod.ts ./src/app/env.ts && npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

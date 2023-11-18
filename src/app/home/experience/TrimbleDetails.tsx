@@ -30,8 +30,8 @@ export const TrimbleDetails = () => (
     </DialogTitle>
     <DialogContent>
       <DialogContentText>
-        Working in Frotn end development for 4 years .
-      </DialogContentText>
+        Working in Front end development for 6 years .
+      </DialogContentText>  
       <VerticalLinearStepper
         getSteps={myPath}
         getStepContent={myStepDetails}
@@ -157,7 +157,7 @@ export const TCP = () => {
     "Senior Software Engineer",
     "Trimble Cloud Platform",
     "Front end Engineer",
-    "July 2019 - At Present",
+    "July 2019 - 2021",
     <ul>
       <li>
         Worked acros multiple teams to manage different UI applications in Cloud

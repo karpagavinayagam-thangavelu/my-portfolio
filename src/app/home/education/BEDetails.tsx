@@ -54,7 +54,7 @@ export const BEDetails = () => (
               <TableCell align="center">191</TableCell>
               <TableCell align="center">179</TableCell>
               <TableCell align="center">8.64</TableCell>
-              <TableCell align="center">Honours</TableCell>
+              <TableCell align="center">Distinction with Honours</TableCell>
               <TableCell align="center">27</TableCell>
               <TableCell align="center">21</TableCell>
             </TableRow>
