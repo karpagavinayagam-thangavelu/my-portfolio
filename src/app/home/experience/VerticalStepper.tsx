@@ -19,7 +19,8 @@ const useStyles = makeStyles((theme: Theme) =>
       marginRight: theme.spacing(1),
     },
     actionsContainer: {
-      marginBottom: theme.spacing(2),
+      marginBottom: theme.spacing(1), 
+      marginTop: theme.spacing(2),
     },
     resetContainer: {
       padding: theme.spacing(3),

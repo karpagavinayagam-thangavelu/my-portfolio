@@ -6,7 +6,7 @@ export const LearningQuotes = () => {
   return (
     <section
       className="parallax"
-      style={{ backgroundImage: `url(${env.imagePath}/bg-1.jpg)` }}
+      style={{ backgroundImage: `url(${env.IMAGE_PATH}/bg-1.jpg)` }}
     >
       <div className="introduction">
         <Quotes
@@ -33,7 +33,7 @@ export const ExperienceQuotes = () => {
 
 export const RecognitionQuotes = () => {
   return (
-    <section className="parallax" style={{ backgroundImage: `url(${env.imagePath}/paint-in-water.jpg)` }}>
+    <section className="parallax" style={{ backgroundImage: `url(${env.IMAGE_PATH}/paint-in-water.jpg)` }}>
       <div className="experience-quotes">
         <Quotes
           text="Feedback is the breakfast of champions."
@@ -46,7 +46,7 @@ export const RecognitionQuotes = () => {
 
 export const CertificationQuotes = () => {
   return (
-    <section className="parallax" style={{ backgroundImage: `url(${env.imagePath}/certificate-bg.jpg)` }}>
+    <section className="parallax" style={{ backgroundImage: `url(${env.IMAGE_PATH}/certificate-bg.jpg)` }}>
       <div className="experience-quotes">
         <Quotes
           text="Your certificate and skills are vital to the extent of jump-starting your career and giving a chance to compete in a global space."

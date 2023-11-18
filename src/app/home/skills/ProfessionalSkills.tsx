@@ -110,7 +110,7 @@ export const SkillCard: React.FC<SkillCardProps> = ({ skills }) => {
               {skill.name}
             </Typography>
             <img
-              src={`${env.imagePath}/${skill.icon}`}
+              src={`${env.IMAGE_PATH}/${skill.icon}`}
               className="skill-icon"
               width="100px"
               height="100px"

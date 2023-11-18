@@ -35,7 +35,7 @@ export const Education = () => {
         {learningPath.map((path , index) => (
           <ThemeProvider theme={darkTheme} key={index}>
             <div className="path"   >
-              <div className="bg-image"  style={{ backgroundImage: `url(${env.imagePath}/${path.image})` }}>
+              <div className="bg-image"  style={{ backgroundImage: `url(${env.IMAGE_PATH}/${path.image})` }}>
                 <div  className="body" style={{ backgroundColor: `rgba(${path.color},0.8)` }}>
                   <div className="center">
                     <div>

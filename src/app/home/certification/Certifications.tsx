@@ -47,7 +47,7 @@ export const Certifications = () => {
                             <ListItem key={index} data-aos="fade-down">
                                 <ListItemAvatar>
                                     <Avatar className="avatar">
-                                        <img src={`${env.imagePath}/${certificate.icon}`} alt="" width="110px" height="110px" />
+                                        <img src={`${env.IMAGE_PATH}/${certificate.icon}`} alt="" width="110px" height="110px" />
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText primary={certificate.title} secondary={certificate.detail} />

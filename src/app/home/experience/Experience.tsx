@@ -43,7 +43,7 @@ export const TrimbleCard = () => (
       <div className="card-body">
         <div className="content">
           <div className="name">Karpaga vinayagam</div>
-          <div className="position">Senior Software Engineer ( Front end )</div>
+          <div className="position">Software Engineering Lead ( Front end )</div>
           <div className="experience">4 years Experience</div>
           <div className="services">Spime Maps, Cloud services</div>
           <div className="expert">ReactJS, Angular</div>

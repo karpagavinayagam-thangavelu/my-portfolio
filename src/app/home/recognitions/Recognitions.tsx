@@ -5,6 +5,7 @@ import { TataLogo } from "../../../images/tata";
 import React from "react";
 import { TrimbleLogo } from "../../../images/Trimble";
 import { env } from "../../env";
+import Comments from "../comments/Comments";
 
 const ILPAward = () => (
   <div className="filler">
@@ -36,7 +37,7 @@ const CoE = () => (
 
 const RankHolder = () => (
   <div className="filler award">
-    <img src={`${env.imagePath}/reward.webp`} alt="" height="70px" width="70px"/>
+    <img src={`${env.IMAGE_PATH}/reward.webp`} alt="" height="70px" width="70px"/>
     <span className="title">Rank Holder</span>
   </div>
 );
@@ -98,6 +99,7 @@ export const Recognitions = () => {
           )}
         </div>
       </div>
+      <Comments/>
     </Element>
   );
 };

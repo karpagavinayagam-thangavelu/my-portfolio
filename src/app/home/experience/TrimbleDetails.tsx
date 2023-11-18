@@ -154,9 +154,9 @@ export const TCP = () => {
     "Achievements",
   ];
   const entries = [
-    "Senior Software Engineer",
+    "Software Engineering Lead",
     "Trimble Cloud Platform",
-    "Front end Engineer",
+    "Front end Lead",
     "July 2019 - 2021",
     <ul>
       <li>
